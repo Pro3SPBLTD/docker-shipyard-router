@@ -8,7 +8,6 @@ run (cd /tmp/node-* && ./configure)
 run (cd /tmp/node-* && make install)
 run npm install git+http://github.com/shipyard/hipache.git -g
 add run.sh /usr/local/bin/run
-volume /var/lib/postgresql
 volume /var/log/shipyard
 expose 80
 expose 443
