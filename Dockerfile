@@ -1,4 +1,4 @@
-from ubuntu:12.04
+from stackbrew/ubuntu:12.04
 maintainer Shipyard Project "http://shipyard-project.com"
 run apt-get -qq update
 run apt-get install -y g++ make python-dev python-setuptools libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make wget git-core
