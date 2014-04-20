@@ -12,9 +12,9 @@ LOG_DIR=/var/log/shipyard
 mkdir -p $LOG_DIR
 
 # check for fig env
-if [ ! -z "$REDIS_1_PORT_6379_TCP_ADDR" ]; then
-    REDIS_HOST=$REDIS_1_PORT_6379_TCP_ADDR
-    REDIS_PORT=$REDIS_1_PORT_6379_TCP_PORT
+if [ ! -z "$SHIPYARD_REDIS_1_PORT_6379_TCP_ADDR" ]; then
+    REDIS_HOST=$SHIPYARD_REDIS_1_PORT_6379_TCP_ADDR
+    REDIS_PORT=$SHIPYARD_REDIS_1_PORT_6379_TCP_PORT
 fi
 # hipache config
 cat << EOF > $ROUTER_CONFIG
